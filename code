@@ -1,0 +1,12 @@
+#Asks your age, but needed to change str into an int
+age = input("What is your current age?")
+age = int(age)
+#Life expectancy for health human being is relatively 80 - 90 years old, so I chose 90 the age.
+liveto = int(90)
+#Mathematical operations for the days, weeks, and months using PEMDAS
+days = (liveto - age) * 365
+weeks = (liveto - age) * 52
+months = (liveto - age) * 12
+#Using the f-string to print out the message, more efficient
+message = print(f"Your have {days} days, {weeks} weeks,and {months} months to live")
+print(message)
